@@ -6,40 +6,40 @@
 	url = https://github.com/Cyan4973/xxHash.git
 [submodule "Telegram/ThirdParty/rlottie"]
 	path = Telegram/ThirdParty/rlottie
-	url = https://github.com/desktop-app/rlottie.git
+	url = https://github.com/behappy-desktop/rlottie.git
 [submodule "Telegram/ThirdParty/lz4"]
 	path = Telegram/ThirdParty/lz4
 	url = https://github.com/lz4/lz4.git
 [submodule "Telegram/lib_crl"]
 	path = Telegram/lib_crl
-	url = https://github.com/desktop-app/lib_crl.git
+	url = https://github.com/behappy-desktop/lib_crl.git
 [submodule "Telegram/lib_rpl"]
 	path = Telegram/lib_rpl
-	url = https://github.com/desktop-app/lib_rpl.git
+	url = https://github.com/behappy-desktop/lib_rpl.git
 [submodule "Telegram/lib_base"]
 	path = Telegram/lib_base
-	url = https://github.com/desktop-app/lib_base.git
+	url = https://github.com/behappy-desktop/lib_base.git
 [submodule "Telegram/codegen"]
 	path = Telegram/codegen
-	url = https://github.com/desktop-app/codegen.git
+	url = https://github.com/behappy-desktop/codegen.git
 [submodule "Telegram/lib_ui"]
 	path = Telegram/lib_ui
-	url = https://github.com/desktop-app/lib_ui.git
+	url = https://github.com/behappy-desktop/lib_ui.git
 [submodule "Telegram/lib_lottie"]
 	path = Telegram/lib_lottie
-	url = https://github.com/desktop-app/lib_lottie.git
+	url = https://github.com/behappy-desktop/lib_lottie.git
 [submodule "Telegram/lib_tl"]
 	path = Telegram/lib_tl
-	url = https://github.com/desktop-app/lib_tl.git
+	url = https://github.com/behappy-desktop/lib_tl.git
 [submodule "Telegram/lib_spellcheck"]
 	path = Telegram/lib_spellcheck
-	url = https://github.com/desktop-app/lib_spellcheck
+	url = https://github.com/behappy-desktop/lib_spellcheck
 [submodule "Telegram/lib_storage"]
 	path = Telegram/lib_storage
-	url = https://github.com/desktop-app/lib_storage.git
+	url = https://github.com/behappy-desktop/lib_storage.git
 [submodule "cmake"]
 	path = cmake
-	url = https://github.com/desktop-app/cmake_helpers.git
+	url = https://github.com/behappy-desktop/cmake_helpers.git
 [submodule "Telegram/ThirdParty/expected"]
 	path = Telegram/ThirdParty/expected
 	url = https://github.com/TartanLlama/expected
@@ -48,7 +48,7 @@
 	url = https://github.com/nayuki/QR-Code-generator
 [submodule "Telegram/lib_qr"]
 	path = Telegram/lib_qr
-	url = https://github.com/desktop-app/lib_qr.git
+	url = https://github.com/behappy-desktop/lib_qr.git
 [submodule "Telegram/ThirdParty/hunspell"]
 	path = Telegram/ThirdParty/hunspell
 	url = https://github.com/hunspell/hunspell
@@ -66,13 +66,13 @@
 	url = https://github.com/fcitx/fcitx5-qt.git
 [submodule "Telegram/lib_webrtc"]
 	path = Telegram/lib_webrtc
-	url = https://github.com/desktop-app/lib_webrtc.git
+	url = https://github.com/behappy-desktop/lib_webrtc.git
 [submodule "Telegram/ThirdParty/tgcalls"]
 	path = Telegram/ThirdParty/tgcalls
-	url = https://github.com/TelegramMessenger/tgcalls.git
+	url = https://github.com/behappy-ios/tgcalls.git
 [submodule "Telegram/lib_webview"]
 	path = Telegram/lib_webview
-	url = https://github.com/desktop-app/lib_webview.git
+	url = https://github.com/behappy-desktop/lib_webview.git
 [submodule "Telegram/ThirdParty/dispatch"]
 	path = Telegram/ThirdParty/dispatch
 	url = https://github.com/apple/swift-corelibs-libdispatch
@@ -87,10 +87,10 @@
 	url = https://github.com/google/cld3.git
 [submodule "Telegram/ThirdParty/libprisma"]
 	path = Telegram/ThirdParty/libprisma
-	url = https://github.com/desktop-app/libprisma.git
+	url = https://github.com/behappy-desktop/libprisma.git
 [submodule "Telegram/ThirdParty/xdg-desktop-portal"]
 	path = Telegram/ThirdParty/xdg-desktop-portal
 	url = https://github.com/flatpak/xdg-desktop-portal.git
 [submodule "Telegram/lib_translate"]
 	path = Telegram/lib_translate
-	url = https://github.com/desktop-app/lib_translate
+	url = https://github.com/behappy-desktop/lib_translate
