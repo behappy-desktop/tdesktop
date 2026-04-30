@@ -1,15 +1,15 @@
 [submodule "Telegram/ThirdParty/GSL"]
 	path = Telegram/ThirdParty/GSL
-	url = https://github.com/Microsoft/GSL.git
+	url = https://github.com/behappy-desktop/GSL.git
 [submodule "Telegram/ThirdParty/xxHash"]
 	path = Telegram/ThirdParty/xxHash
-	url = https://github.com/Cyan4973/xxHash.git
+	url = https://github.com/behappy-desktop/xxHash.git
 [submodule "Telegram/ThirdParty/rlottie"]
 	path = Telegram/ThirdParty/rlottie
 	url = https://github.com/behappy-desktop/rlottie.git
 [submodule "Telegram/ThirdParty/lz4"]
 	path = Telegram/ThirdParty/lz4
-	url = https://github.com/lz4/lz4.git
+	url = https://github.com/behappy-desktop/lz4.git
 [submodule "Telegram/lib_crl"]
 	path = Telegram/lib_crl
 	url = https://github.com/behappy-desktop/lib_crl.git
@@ -42,28 +42,28 @@
 	url = https://github.com/behappy-desktop/cmake_helpers.git
 [submodule "Telegram/ThirdParty/expected"]
 	path = Telegram/ThirdParty/expected
-	url = https://github.com/TartanLlama/expected
+	url = https://github.com/behappy-desktop/expected
 [submodule "Telegram/ThirdParty/QR"]
 	path = Telegram/ThirdParty/QR
-	url = https://github.com/nayuki/QR-Code-generator
+	url = https://github.com/behappy-desktop/QR-Code-generator
 [submodule "Telegram/lib_qr"]
 	path = Telegram/lib_qr
 	url = https://github.com/behappy-desktop/lib_qr.git
 [submodule "Telegram/ThirdParty/hunspell"]
 	path = Telegram/ThirdParty/hunspell
-	url = https://github.com/hunspell/hunspell
+	url = https://github.com/behappy-desktop/hunspell
 [submodule "Telegram/ThirdParty/range-v3"]
 	path = Telegram/ThirdParty/range-v3
-	url = https://github.com/ericniebler/range-v3.git
+	url = https://github.com/behappy-desktop/range-v3.git
 [submodule "Telegram/ThirdParty/nimf"]
 	path = Telegram/ThirdParty/nimf
-	url = https://github.com/hamonikr/nimf.git
+	url = https://github.com/behappy-desktop/nimf.git
 [submodule "Telegram/ThirdParty/hime"]
 	path = Telegram/ThirdParty/hime
-	url = https://github.com/hime-ime/hime.git
+	url = https://github.com/behappy-desktop/hime.git
 [submodule "Telegram/ThirdParty/fcitx5-qt"]
 	path = Telegram/ThirdParty/fcitx5-qt
-	url = https://github.com/fcitx/fcitx5-qt.git
+	url = https://github.com/behappy-desktop/fcitx5-qt.git
 [submodule "Telegram/lib_webrtc"]
 	path = Telegram/lib_webrtc
 	url = https://github.com/behappy-desktop/lib_webrtc.git
@@ -75,22 +75,22 @@
 	url = https://github.com/behappy-desktop/lib_webview.git
 [submodule "Telegram/ThirdParty/dispatch"]
 	path = Telegram/ThirdParty/dispatch
-	url = https://github.com/apple/swift-corelibs-libdispatch
+	url = https://github.com/behappy-desktop/swift-corelibs-libdispatch
 [submodule "Telegram/ThirdParty/kimageformats"]
 	path = Telegram/ThirdParty/kimageformats
-	url = https://github.com/KDE/kimageformats.git
+	url = https://github.com/behappy-desktop/kimageformats.git
 [submodule "Telegram/ThirdParty/kcoreaddons"]
 	path = Telegram/ThirdParty/kcoreaddons
-	url = https://github.com/KDE/kcoreaddons.git
+	url = https://github.com/behappy-desktop/kcoreaddons.git
 [submodule "Telegram/ThirdParty/cld3"]
 	path = Telegram/ThirdParty/cld3
-	url = https://github.com/google/cld3.git
+	url = https://github.com/behappy-desktop/cld3.git
 [submodule "Telegram/ThirdParty/libprisma"]
 	path = Telegram/ThirdParty/libprisma
 	url = https://github.com/behappy-desktop/libprisma.git
 [submodule "Telegram/ThirdParty/xdg-desktop-portal"]
 	path = Telegram/ThirdParty/xdg-desktop-portal
-	url = https://github.com/flatpak/xdg-desktop-portal.git
+	url = https://github.com/behappy-desktop/xdg-desktop-portal.git
 [submodule "Telegram/lib_translate"]
 	path = Telegram/lib_translate
 	url = https://github.com/behappy-desktop/lib_translate
