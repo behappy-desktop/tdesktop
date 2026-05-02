@@ -1,85 +1,123 @@
-# [Telegram Desktop][telegram_desktop] – Official Messenger
+# BeHappy Desktop
 
-This is the complete source code and the build instructions for the official [Telegram][telegram] messenger desktop client, based on the [Telegram API][telegram_api] and the [MTProto][telegram_proto] secure protocol.
+Desktop client for the [BeHappy][behappy] messaging service.
 
-[![Version](https://badge.fury.io/gh/telegramdesktop%2Ftdesktop.svg)](https://github.com/telegramdesktop/tdesktop/releases)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Windows./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/MacOS./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Linux./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
+> **This project is a fork of [Telegram Desktop][tdesktop].** It is
+> licensed under [GPL v3 with OpenSSL exception][license], the same
+> terms as the upstream project. We are grateful to the Telegram Desktop
+> Authors for their work — without it this fork would not exist.
+>
+> BeHappy Desktop is **not affiliated with, endorsed by, or sponsored
+> by Telegram FZ-LLC**. It connects to BeHappy servers, not Telegram
+> servers, and cannot be used to access Telegram accounts.
 
-[![Preview of Telegram Desktop][preview_image]][preview_image_url]
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/behappy-desktop/tdesktop/blob/master/LICENSE)
+[![Upstream](https://img.shields.io/badge/forked%20from-tdesktop-orange.svg)][tdesktop]
 
-The source code is published under GPLv3 with OpenSSL exception, the license is available [here][license].
+---
 
-## Supported systems
+## What this is
 
-The latest version is available for
+BeHappy Desktop is the official desktop client for the BeHappy
+messenger. It is built on top of the Telegram Desktop codebase
+([tdesktop][tdesktop]) under GPL v3, with the following high-level
+modifications:
 
-* [Windows 7 and above (64 bit)](https://telegram.org/dl/desktop/win64) ([portable](https://telegram.org/dl/desktop/win64_portable))
-* [Windows 7 and above (32 bit)](https://telegram.org/dl/desktop/win) ([portable](https://telegram.org/dl/desktop/win_portable))
-* [macOS 10.13 and above](https://telegram.org/dl/desktop/mac)
-* [Linux static build for 64 bit](https://telegram.org/dl/desktop/linux)
-* [Snap](https://snapcraft.io/telegram-desktop)
-* [Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
+- Networking layer rewritten to use the **MVSy 1.0** protocol and
+  connect to BeHappy backend servers (instead of MTProto 2.0 / Telegram
+  DCs).
+- Branding, visual identity, and product naming replaced throughout.
+- Telegram-specific features removed where not applicable to BeHappy
+  (e.g., Telegram Premium subscriptions, Telegram Stars, Fragment
+  integration, sponsored messages).
+- Additional features added that are unique to BeHappy.
 
-## Old system versions
+The complete list of changes from upstream is tracked in
+[`CHANGELOG.md`](CHANGELOG.md). The upstream changelog is preserved in
+[`UPSTREAM_CHANGELOG.txt`](UPSTREAM_CHANGELOG.txt) for reference.
 
-Version **4.9.9** was the last that supports older systems
+## Relationship to upstream
 
-* [macOS 10.12](https://updates.tdesktop.com/tmac/tsetup.4.9.9.dmg)
-* [Linux with glibc < 2.28 static build](https://updates.tdesktop.com/tlinux/tsetup.4.9.9.tar.xz)
+| | Telegram Desktop | BeHappy Desktop |
+|---|---|---|
+| License | GPL v3 + OpenSSL exception | GPL v3 + OpenSSL exception (same) |
+| Backend | Telegram DCs | BeHappy servers (`mvsy.behappy.rest`) |
+| Protocol | MTProto 2.0 | MVSy 1.0 |
+| Trademarks | Telegram, MTProto | BeHappy |
+| Account compatibility | Telegram accounts | BeHappy accounts (separate system) |
+| Source repository | [telegramdesktop/tdesktop][tdesktop] | [behappy-desktop/tdesktop](https://github.com/behappy-desktop/tdesktop) |
 
-Version **2.4.4** was the last that supports older systems
+We do **not** merge updates from upstream automatically. The fork is
+independently maintained.
 
-* [OS X 10.10 and 10.11](https://updates.tdesktop.com/tosx/tsetup-osx.2.4.4.dmg)
-* [Linux static build for 32 bit](https://updates.tdesktop.com/tlinux32/tsetup32.2.4.4.tar.xz)
+## Downloads
 
-Version **1.8.15** was the last that supports older systems
+The latest BeHappy Desktop builds are available at:
 
-* [Windows XP and Vista](https://updates.tdesktop.com/tsetup/tsetup.1.8.15.exe) ([portable](https://updates.tdesktop.com/tsetup/tportable.1.8.15.zip))
-* [OS X 10.8 and 10.9](https://updates.tdesktop.com/tmac/tsetup.1.8.15.dmg)
-* [OS X 10.6 and 10.7](https://updates.tdesktop.com/tmac32/tsetup32.1.8.15.dmg)
+- Windows / macOS / Linux: <https://behappy.rest/desktop>
+- Source release archives: <https://github.com/behappy-desktop/tdesktop/releases>
+
+For Telegram Desktop (the upstream project) please visit
+<https://desktop.telegram.org/>.
+
+## Building from source
+
+The build process is unchanged from upstream. Refer to:
+
+- [docs/building-win.md](docs/building-win.md) — Windows
+- [docs/building-mac.md](docs/building-mac.md) — macOS
+- [docs/building-linux.md](docs/building-linux.md) — Linux
+
+The build tooling (CMake, scripts) and third-party dependencies are
+inherited from Telegram Desktop unchanged.
 
 ## Third-party
 
-* Qt 6 ([LGPL](http://doc.qt.io/qt-6/lgpl.html)) and Qt 5.15 ([LGPL](http://doc.qt.io/qt-5/lgpl.html)) slightly patched
+This project depends on the same third-party components as Telegram
+Desktop. The full list is preserved here for transparency:
+
+* Qt 6 ([LGPL](http://doc.qt.io/qt-6/lgpl.html))
 * OpenSSL 3.2.1 ([Apache License 2.0](https://www.openssl.org/source/apache-license-2.0.txt))
 * WebRTC ([New BSD License](https://github.com/desktop-app/tg_owt/blob/master/LICENSE))
 * zlib ([zlib License](http://www.zlib.net/zlib_license.html))
 * LZMA SDK 9.20 ([public domain](http://www.7-zip.org/sdk.html))
 * liblzma ([public domain](http://tukaani.org/xz/))
-* Google Breakpad ([License](https://chromium.googlesource.com/breakpad/breakpad/+/master/LICENSE))
-* Google Crashpad ([Apache License 2.0](https://chromium.googlesource.com/crashpad/crashpad/+/master/LICENSE))
-* GYP ([BSD License](https://github.com/bnoordhuis/gyp/blob/master/LICENSE))
-* Ninja ([Apache License 2.0](https://github.com/ninja-build/ninja/blob/master/COPYING))
-* OpenAL Soft ([LGPL](https://github.com/kcat/openal-soft/blob/master/COPYING))
-* Opus codec ([BSD License](http://www.opus-codec.org/license/))
+* libopus codec ([BSD License](http://www.opus-codec.org/license/))
 * FFmpeg ([LGPL](https://www.ffmpeg.org/legal.html))
-* Guideline Support Library ([MIT License](https://github.com/Microsoft/GSL/blob/master/LICENSE))
-* Range-v3 ([Boost License](https://github.com/ericniebler/range-v3/blob/master/LICENSE.txt))
-* Open Sans font ([Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html))
-* Vazirmatn font ([SIL Open Font License 1.1](https://github.com/rastikerdar/vazirmatn/blob/master/OFL.txt))
-* Emoji alpha codes ([MIT License](https://github.com/emojione/emojione/blob/master/extras/alpha-codes/LICENSE.md))
+* OpenAL Soft ([LGPL](https://kcat.strangesoft.net/openal.html))
 * xxHash ([BSD License](https://github.com/Cyan4973/xxHash/blob/dev/LICENSE))
-* QR Code generator ([MIT License](https://github.com/nayuki/QR-Code-generator#license))
-* CMake ([New BSD License](https://github.com/Kitware/CMake/blob/master/Copyright.txt))
-* Hunspell ([LGPL](https://github.com/hunspell/hunspell/blob/master/COPYING.LESSER))
-* Ada ([Apache License 2.0](https://github.com/ada-url/ada/blob/main/LICENSE-APACHE))
+* Range-v3 ([Boost License](https://github.com/ericniebler/range-v3/blob/master/LICENSE.txt))
 
-## Build instructions
+## License
 
-* [Windows (32-bit and 64-bit)][win]
-* [macOS][mac]
-* [GNU/Linux using Docker][linux]
+BeHappy Desktop is free software: you can redistribute it and/or modify
+it under the terms of the **GNU General Public License v3** as published
+by the Free Software Foundation, with the OpenSSL linking exception
+inherited from upstream.
 
-[//]: # (LINKS)
-[telegram]: https://telegram.org
-[telegram_desktop]: https://desktop.telegram.org
-[telegram_api]: https://core.telegram.org
-[telegram_proto]: https://core.telegram.org/mtproto
-[license]: LICENSE
-[win]: docs/building-win.md
-[mac]: docs/building-mac.md
-[linux]: docs/building-linux.md
-[preview_image]: https://github.com/telegramdesktop/tdesktop/blob/dev/docs/assets/preview.png "Preview of Telegram Desktop"
-[preview_image_url]: https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/docs/assets/preview.png
+- Full license text: [LICENSE](LICENSE)
+- Per-file copyright header: [LEGAL](LEGAL)
+- Attribution and trademark notice: [NOTICE](NOTICE)
+
+By contributing to this repository, you agree that your contributions
+will be licensed under the same terms.
+
+## Trademarks
+
+"Telegram" and "MTProto" are trademarks of Telegram FZ-LLC. They are
+used in this README and in source code copyright headers solely to
+identify the upstream project from which this fork is derived, as
+required by GPL §5(a). They are **not** used as trademarks of this
+product.
+
+"BeHappy" is a trademark of the BeHappy Desktop Authors.
+
+## Contact
+
+- General: <https://behappy.rest>
+- Source code questions: open an issue on this repository
+- License compliance / DMCA: <legal@behappy.rest>
+
+[behappy]: https://behappy.rest
+[tdesktop]: https://github.com/telegramdesktop/tdesktop
+[license]: https://github.com/behappy-desktop/tdesktop/blob/master/LICENSE
